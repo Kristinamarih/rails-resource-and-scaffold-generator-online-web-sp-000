@@ -295,3 +295,6 @@ Processing by ArticlesController#index as HTML
   Rendering articles/index.html.erb within layouts/application
   [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
   Rendered articles/index.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 312ms (Views: 297.3ms | ActiveRecord: 0.8ms)
+
+
