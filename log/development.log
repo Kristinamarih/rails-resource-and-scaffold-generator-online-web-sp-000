@@ -265,3 +265,15 @@ Processing by ArticlesController#new as HTML
 Completed 200 OK in 332ms (Views: 313.6ms | ActiveRecord: 0.7ms)
 
 
+Started POST "/articles" for 51.174.78.155 at 2019-09-03 13:36:15 +0000
+Cannot render console from 51.174.78.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qJLASmrA4AKpGOSPw455m0LIO1Fz/pfdSrw2wT8IuOQg4/q3Umgbgv4BRZFqBnoC8lQe3CPtc/VQZYTJIvQytw==", "article"=>{"title"=>"My article", "body"=>"Hello, this is my first article!"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My article"], ["body", "Hello, this is my first article!"], ["created_at", "2019-09-03 13:36:16.038140"], ["updated_at", "2019-09-03 13:36:16.038140"]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://207.154.221.6:32828/articles/1
+Completed 302 Found in 45ms (ActiveRecord: 5.0ms)
+
+
